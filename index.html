@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BreathCheck Showcase</title>
+  <meta name="description" content="BreathCheck showcase: CBT-inspired web app and installable PWA for calm, local-first anxiety self-help." />
+  <link rel="stylesheet" href="styles.css?v=20260312-showcase" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="./assets/logo.webp?v=20260312" alt="BreathCheck logo" class="brand-logo" />
+        <div>
+          <h1>BreathCheck</h1>
+          <p class="muted">Web app + installable PWA for desktop and mobile</p>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="#overview">Overview</a>
+        <a href="#install">Install</a>
+        <a href="#modules">Modules</a>
+        <a href="#tools">Tools</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="container hero-grid">
+        <article class="card hero-copy">
+          <p class="pill">Calm, focused, local-first support</p>
+          <h2>One product story: BreathCheck web app and PWA</h2>
+          <p>
+            BreathCheck helps users learn anxiety-management skills, use quick coping tools, and track weekly progress.
+            The product is delivered as a browser app that can also be installed as a PWA on desktop and mobile.
+          </p>
+          <div class="hero-tags">
+            <span>CBT-inspired modules</span>
+            <span>Breath Break + Feel-O-Meter</span>
+            <span>Progress trends + milestones</span>
+            <span>Local-first encrypted storage</span>
+          </div>
+          <a
+            class="cta-btn"
+            href="https://breathcheck-web-v2.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open BreathCheck App
+          </a>
+        </article>
+
+        <article class="card showcase-panel">
+          <h3>Module 1 Media Preview</h3>
+          <p class="muted">Step images currently bundled in the active app resources.</p>
+          <div class="carousel" id="carousel">
+            <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">&lt;</button>
+            <img id="slideImage" src="./assets/module1/step1.webp?v=20260312" alt="Module 1 preview" />
+            <button class="carousel-btn" id="nextBtn" aria-label="Next slide">&gt;</button>
+          </div>
+          <div class="dots" id="dots"></div>
+          <p id="slideCaption" class="caption">Module 1, Step 1: Welcome + Orientation</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted-bg" id="install">
+      <div class="container">
+        <h2 class="section-title">Install and Access</h2>
+        <div class="grid cols-2">
+          <article class="card">
+            <h3>Install as PWA (Desktop or Mobile)</h3>
+            <ol class="install-steps">
+              <li>Open the BreathCheck app in a modern browser.</li>
+              <li>Use browser “Install app” or “Add to Home Screen”.</li>
+              <li>Launch from desktop/home screen like a regular app.</li>
+            </ol>
+            <p class="callout">
+              After first load and cache warm-up, the app shell and core routes can still open offline.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Use in Browser</h3>
+            <ul class="install-steps">
+              <li>No installer package is required.</li>
+              <li>Works on desktop, tablet, and mobile browsers.</li>
+              <li>Each browser/device keeps its own local data.</li>
+            </ul>
+            <p class="callout">
+              BreathCheck is local-first. Sensitive entries are encrypted locally before persistence.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Core Navigation</h2>
+        <div class="grid cols-5 compact">
+          <article class="card mini"><h3>Home</h3><p>Daily check-in and quick next-step actions.</p></article>
+          <article class="card mini"><h3>Learn</h3><p>6 sequential CBT-inspired modules with autosave.</p></article>
+          <article class="card mini"><h3>Tools</h3><p>Breath Break, Feel-O-Meter, and usage history.</p></article>
+          <article class="card mini"><h3>Progress</h3><p>Weekly activity, trends, milestones, and momentum.</p></article>
+          <article class="card mini"><h3>Support</h3><p>Crisis contacts and user-managed support resources.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg" id="modules">
+      <div class="container">
+        <h2 class="section-title">6-Module Program</h2>
+        <p class="muted">Modules unlock in sequence to keep progress clear and manageable.</p>
+        <div class="grid cols-3">
+          <article class="card module"><h3>1. Understanding Anxiety</h3><p>Anxiety basics, body signals, and the worry cycle.</p></article>
+          <article class="card module"><h3>2. Relaxation</h3><p>Grounding skills and breathing-based calming practice.</p></article>
+          <article class="card module"><h3>3. Our Thoughts</h3><p>Identify cognitive distortions and anxious thought patterns.</p></article>
+          <article class="card module"><h3>4. Changing Thoughts</h3><p>Challenge and reframe automatic anxious thinking.</p></article>
+          <article class="card module"><h3>5. Coping with Worry</h3><p>Use scheduled worry-time and refocus routines.</p></article>
+          <article class="card module"><h3>6. Lifestyle Factors</h3><p>Sleep, movement, mindfulness, and relapse prevention planning.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="container">
+        <h2 class="section-title">Practical Tools</h2>
+        <div class="grid cols-2">
+          <article class="card tool">
+            <img src="./assets/tools/grounding.webp?v=20260312" alt="Breath Break tool visual" class="tool-image" />
+            <h3>Breath Break</h3>
+            <p>Run paced sessions, tune duration, and save session history for reflection.</p>
+            <ul>
+              <li>Pace and duration presets</li>
+              <li>Single-action start/stop flow</li>
+              <li>History cards with session details</li>
+            </ul>
+          </article>
+          <article class="card tool">
+            <img src="./assets/tools/thought_log.webp?v=20260312" alt="Feel-O-Meter visual" class="tool-image" />
+            <h3>Feel-O-Meter</h3>
+            <p>Track current mood, anxiety, stress, and emotion-word awareness in under a minute.</p>
+            <ul>
+              <li>1-10 slider ratings</li>
+              <li>Emotion word wheel review</li>
+              <li>Saved entry history</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg">
+      <div class="container">
+        <h2 class="section-title">Progress and Milestones</h2>
+        <div class="grid cols-4">
+          <article class="card badge"><img src="./assets/milestones/1.webp?v=20260312" alt="Milestone 1" /><p>First streak</p></article>
+          <article class="card badge"><img src="./assets/milestones/2.webp?v=20260312" alt="Milestone 2" /><p>First module complete</p></article>
+          <article class="card badge"><img src="./assets/milestones/5.webp?v=20260312" alt="Milestone 5" /><p>Values anchor</p></article>
+          <article class="card badge"><img src="./assets/milestones/8.webp?v=20260312" alt="Milestone 8" /><p>Consistency growth</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container">
+        <h2 class="section-title">Privacy and Safety</h2>
+        <div class="grid cols-2">
+          <article class="card">
+            <h3>Local-first and encrypted</h3>
+            <p>
+              BreathCheck stores data locally in each browser/device. Sensitive entries are encrypted locally before they are saved.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Supportive, not emergency care</h3>
+            <p>
+              BreathCheck is for self-help and skills practice. It is not a crisis or emergency response service.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>BreathCheck 2026 - Web app and installable PWA</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20260312-showcase"></script>
+</body>
+</html>
