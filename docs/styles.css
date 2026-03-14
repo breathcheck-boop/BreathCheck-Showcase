@@ -287,6 +287,19 @@ img {
   min-height: 140px;
 }
 
+.mini-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.mini-icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
 .mini h3,
 .module h3,
 .tool h3 {
