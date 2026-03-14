@@ -181,7 +181,7 @@ img {
 .carousel {
   margin-top: 10px;
   display: grid;
-  grid-template-columns: 42px 1fr 42px;
+  grid-template-columns: 44px 1fr 44px;
   align-items: center;
   gap: 8px;
 }
@@ -197,14 +197,15 @@ img {
 .carousel-btn {
   display: grid;
   place-items: center;
-  height: 56px;
-  width: 56px;
+  height: 44px;
+  width: 44px;
   padding: 0;
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: 14px;
   background: #fff;
   cursor: pointer;
   box-shadow: 0 8px 18px rgba(46, 58, 52, 0.08);
+  overflow: hidden;
 }
 
 .carousel-btn:hover {
@@ -212,11 +213,12 @@ img {
 }
 
 .carousel-icon {
-  width: 26px;
-  height: 26px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
   border: 0;
   border-radius: 0;
+  flex: 0 0 auto;
 }
 
 .dots {
