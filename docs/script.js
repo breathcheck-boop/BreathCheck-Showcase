@@ -1,33 +1,29 @@
-const ASSET_VERSION = "v=20260312";
+const ASSET_VERSION = "v=20260314";
 
 const slides = [
   {
     src: `./assets/module1/step1.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 1: Welcome + Orientation",
+    caption: "Module 1, Step 1 of 6: Warm Start",
   },
   {
     src: `./assets/module1/step2.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 2: Anxiety Basics",
+    caption: "Module 1, Step 2 of 6: Learn: What Anxiety Is",
   },
   {
     src: `./assets/module1/step3.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 3: Fight-or-Flight",
+    caption: "Module 1, Step 3 of 6: Learn: Anxiety Cycle",
   },
   {
     src: `./assets/module1/step4.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 4: Worry Cycle",
+    caption: "Module 1, Step 4 of 6: Quick Check",
   },
   {
     src: `./assets/module1/step5.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 5: Concern vs Worry",
+    caption: "Module 1, Step 5 of 6: Core Activity: Mapping Anxiety Cycle",
   },
   {
     src: `./assets/module1/step6.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 6: Domains",
-  },
-  {
-    src: `./assets/module1/step7.webp?${ASSET_VERSION}`,
-    caption: "Module 1, Step 7: Values to Habits",
+    caption: "Module 1, Step 6 of 6: Reflection / Summary",
   },
 ];
 

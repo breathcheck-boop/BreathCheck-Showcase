@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BreathCheck Showcase</title>
-  <meta name="description" content="BreathCheck showcase: web app and installable PWA for calm anxiety self-help, guided modules, quick coping tools, and local-first saving with participant-linked research sync." />
-  <link rel="stylesheet" href="styles.css?v=20260312-showcase" />
+  <meta name="description" content="BreathCheck showcase: web app and installable PWA for calm anxiety self-help, guided modules, quick coping tools, progress tracking, and local-first saving with participant-linked research sync." />
+  <link rel="stylesheet" href="styles.css?v=20260314-showcase-2" />
 </head>
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <img src="./assets/logo.webp?v=20260312" alt="BreathCheck logo" class="brand-logo" />
+        <img src="./assets/logo.webp?v=20260314" alt="BreathCheck logo" class="brand-logo" />
         <div>
           <h1>BreathCheck</h1>
           <p class="muted">Web app + installable PWA for desktop and mobile</p>
@@ -40,8 +40,8 @@
           <div class="hero-tags">
             <span>6 guided modules</span>
             <span>Breath Break + Feel-O-Meter</span>
-            <span>Progress trends + milestones</span>
-            <span>Local-first + research sync</span>
+            <span>Structured daily check-in</span>
+            <span>Participant-linked research sync</span>
           </div>
           <a
             class="cta-btn"
@@ -54,15 +54,15 @@
         </article>
 
         <article class="card showcase-panel">
-          <h3>Module 1 Media Preview</h3>
-          <p class="muted">Step images currently bundled in the active app resources.</p>
+          <h3>Understanding Anxiety Preview</h3>
+          <p class="muted">Current live module flow and step media from the redesign app.</p>
           <div class="carousel" id="carousel">
             <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">&lt;</button>
-            <img id="slideImage" src="./assets/module1/step1.webp?v=20260312" alt="Module 1 preview" />
+            <img id="slideImage" src="./assets/module1/step1.webp?v=20260314" alt="Module 1 preview" />
             <button class="carousel-btn" id="nextBtn" aria-label="Next slide">&gt;</button>
           </div>
           <div class="dots" id="dots"></div>
-          <p id="slideCaption" class="caption">Module 1, Step 1: Welcome + Orientation</p>
+          <p id="slideCaption" class="caption">Module 1, Step 1 of 6: Warm Start</p>
         </article>
       </div>
     </section>
@@ -102,26 +102,113 @@
       <div class="container">
         <h2 class="section-title">Core Navigation</h2>
         <div class="grid cols-5 compact">
-          <article class="card mini"><h3>Home</h3><p>Daily check-in and quick next-step actions.</p></article>
-          <article class="card mini"><h3>Learn</h3><p>6 sequential guided modules with autosave.</p></article>
-          <article class="card mini"><h3>Tools</h3><p>Breath Break, Feel-O-Meter, and usage history.</p></article>
-          <article class="card mini"><h3>Progress</h3><p>Weekly activity, trends, milestones, and momentum.</p></article>
-          <article class="card mini"><h3>Support</h3><p>Crisis contacts and user-managed support resources.</p></article>
+          <article class="card mini"><h3>Home</h3><p>Structured daily check-in, recent activity, and the next best step.</p></article>
+          <article class="card mini"><h3>Learn</h3><p>Sequential modules with step-based progress, previews, and autosave.</p></article>
+          <article class="card mini"><h3>Tools</h3><p>Breath Break, Feel-O-Meter, and a shared history tab.</p></article>
+          <article class="card mini"><h3>Progress</h3><p>Next-step guidance, activity trends, streaks, and milestone tracking.</p></article>
+          <article class="card mini"><h3>Support</h3><p>Crisis contacts, trusted organizations, and user-managed support entries.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section muted-bg" id="modules">
       <div class="container">
-        <h2 class="section-title">6-Module Program</h2>
-        <p class="muted">Modules unlock in sequence to keep progress clear and manageable.</p>
-        <div class="grid cols-3">
-          <article class="card module"><h3>1. Understanding Anxiety</h3><p>Anxiety basics, body signals, and the worry cycle.</p></article>
-          <article class="card module"><h3>2. Relaxation</h3><p>Grounding skills and breathing-based calming practice.</p></article>
-          <article class="card module"><h3>3. Our Thoughts</h3><p>Identify cognitive distortions and anxious thought patterns.</p></article>
-          <article class="card module"><h3>4. Changing Thoughts</h3><p>Challenge and reframe automatic anxious thinking.</p></article>
-          <article class="card module"><h3>5. Coping with Worry</h3><p>Use scheduled worry-time and refocus routines.</p></article>
-          <article class="card module"><h3>6. Lifestyle Factors</h3><p>Sleep, movement, mindfulness, and relapse prevention planning.</p></article>
+        <h2 class="section-title">Current Program Structure</h2>
+        <p class="muted">These titles, summaries, step counts, and step flows mirror the current redesign app.</p>
+        <div class="grid cols-2 module-detail-grid">
+          <article class="card module">
+            <div class="module-header">
+              <h3>1. Understanding Anxiety</h3>
+              <p class="module-meta">6 steps · ~7 min</p>
+            </div>
+            <p>Understand anxiety, the worry cycle, and how avoidance strengthens long-term anxiety.</p>
+            <ol class="module-step-list">
+              <li>Warm Start</li>
+              <li>Learn: What Anxiety Is</li>
+              <li>Learn: Anxiety Cycle</li>
+              <li>Quick Check</li>
+              <li>Core Activity: Mapping Anxiety Cycle</li>
+              <li>Reflection / Summary</li>
+            </ol>
+          </article>
+          <article class="card module">
+            <div class="module-header">
+              <h3>2. Relaxation</h3>
+              <p class="module-meta">7 steps · ~7 min</p>
+            </div>
+            <p>Recognize physical and mental anxiety symptoms and apply grounding to ease physiological arousal.</p>
+            <ol class="module-step-list">
+              <li>Warm Start</li>
+              <li>Learn: Anxiety Symptoms</li>
+              <li>Learn: Three Ways to Ease Anxiety</li>
+              <li>Quick Self-Check</li>
+              <li>Core Activity: 5-4-3-2-1 Grounding</li>
+              <li>Optional Practice: Body Relaxation</li>
+              <li>Reflection / Summary</li>
+            </ol>
+          </article>
+          <article class="card module">
+            <div class="module-header">
+              <h3>3. Our Thoughts</h3>
+              <p class="module-meta">6 steps · ~7 min</p>
+            </div>
+            <p>Identify unhelpful thoughts and core distortions that maintain anxiety.</p>
+            <ol class="module-step-list">
+              <li>Warm Start</li>
+              <li>Learn: Core Cognitive Distortions</li>
+              <li>Learn: Additional Unhelpful Styles</li>
+              <li>Quick Check: Pattern Match</li>
+              <li>Core Activity: Thought Record</li>
+              <li>Reflection / Summary</li>
+            </ol>
+          </article>
+          <article class="card module">
+            <div class="module-header">
+              <h3>4. Changing Thoughts</h3>
+              <p class="module-meta">7 steps · ~9 min</p>
+            </div>
+            <p>Identify automatic negative thoughts, challenge evidence, and rewrite thoughts into balanced alternatives.</p>
+            <ol class="module-step-list">
+              <li>Warm Start</li>
+              <li>Learn: Automatic Thoughts and Rumination</li>
+              <li>Quick Check: Rumination Pattern</li>
+              <li>Guided Activity Part 1: Identify</li>
+              <li>Guided Activity Part 2: Evaluate and Reframe</li>
+              <li>Guided Activity Part 3: Re-rate</li>
+              <li>Reflection / Summary</li>
+            </ol>
+          </article>
+          <article class="card module">
+            <div class="module-header">
+              <h3>5. Coping with Worry</h3>
+              <p class="module-meta">7 steps · ~8 min</p>
+            </div>
+            <p>Use scheduled worry time to contain rumination and respond to worries more constructively.</p>
+            <ol class="module-step-list">
+              <li>Warm Start</li>
+              <li>Learn: What-If Worries</li>
+              <li>Learn: Beliefs About Worry</li>
+              <li>Guided Setup: Worry Time Schedule</li>
+              <li>Guided Activity: Capture Worries</li>
+              <li>Reflection After Worry Time</li>
+              <li>Summary</li>
+            </ol>
+          </article>
+          <article class="card module">
+            <div class="module-header">
+              <h3>6. Lifestyle Factors</h3>
+              <p class="module-meta">6 steps · ~7 min</p>
+            </div>
+            <p>Build supportive routines through activity, sleep strategies, lifestyle goals, sleep diary practice, and relapse prevention.</p>
+            <ol class="module-step-list">
+              <li>Warm Start</li>
+              <li>Learn: Activity and Daily Routine Support</li>
+              <li>Learn: Sleep Quality Strategies</li>
+              <li>Guided Activity: Lifestyle Goals</li>
+              <li>Guided Activity: Sleep Diary</li>
+              <li>Recap: Maintenance and Relapse Prevention</li>
+            </ol>
+          </article>
         </div>
       </div>
     </section>
@@ -156,12 +243,12 @@
 
     <section class="section muted-bg">
       <div class="container">
-        <h2 class="section-title">Progress and Milestones</h2>
+        <h2 class="section-title">Current Progress Milestones</h2>
         <div class="grid cols-4">
-          <article class="card badge"><img src="./assets/milestones/1.webp?v=20260312" alt="Milestone 1" /><p>First streak</p></article>
-          <article class="card badge"><img src="./assets/milestones/2.webp?v=20260312" alt="Milestone 2" /><p>First module complete</p></article>
-          <article class="card badge"><img src="./assets/milestones/5.webp?v=20260312" alt="Milestone 5" /><p>Values anchor</p></article>
-          <article class="card badge"><img src="./assets/milestones/8.webp?v=20260312" alt="Milestone 8" /><p>Consistency growth</p></article>
+          <article class="card badge"><img src="./assets/milestones/1.webp?v=20260314" alt="Relaxation starter milestone" /><p>Relaxation starter</p><span>Use Breath Break once.</span></article>
+          <article class="card badge"><img src="./assets/milestones/2.webp?v=20260314" alt="Feel-O-Meter starter milestone" /><p>Feel-O-Meter starter</p><span>Save your first Feel-O-Meter entry.</span></article>
+          <article class="card badge"><img src="./assets/milestones/5.webp?v=20260314" alt="Weekly engagement milestone" /><p>Weekly engagement</p><span>Engage with BreathCheck on 4 days this week.</span></article>
+          <article class="card badge"><img src="./assets/milestones/8.webp?v=20260314" alt="Building streak milestone" /><p>Building streak</p><span>Reach a 3-day engagement streak.</span></article>
         </div>
       </div>
     </section>
@@ -198,6 +285,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260312-showcase"></script>
+  <script src="script.js?v=20260314-showcase-2"></script>
 </body>
 </html>
