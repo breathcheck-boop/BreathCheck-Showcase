@@ -280,7 +280,16 @@ img {
 }
 
 .module-detail-grid {
-  align-items: start;
+  align-items: stretch;
+}
+
+.module-detail-grid > .card {
+  height: 100%;
+}
+
+.module {
+  display: flex;
+  flex-direction: column;
 }
 
 .module-header {
@@ -302,6 +311,7 @@ img {
   margin: 12px 0 0;
   padding-left: 20px;
   color: var(--text-muted);
+  flex: 1;
 }
 
 .module-step-list li {
