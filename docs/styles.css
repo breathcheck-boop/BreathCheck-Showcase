@@ -64,8 +64,8 @@ img {
 }
 
 .brand-logo {
-  width: 54px;
-  height: 54px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
 }
 
@@ -81,6 +81,9 @@ img {
 }
 
 .topnav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--text-main);
   text-decoration: none;
   font-weight: 600;
@@ -90,6 +93,12 @@ img {
 
 .topnav a:hover {
   background: var(--accent);
+}
+
+.topnav-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
 }
 
 .hero {
@@ -130,18 +139,6 @@ img {
   font-size: 13px;
   padding: 6px 12px;
   margin: 0;
-}
-
-.pill-with-icon {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.pill-icon {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
 }
 
 .hero-tags {
@@ -189,7 +186,7 @@ img {
   gap: 8px;
 }
 
-.carousel img {
+.carousel .slide-image {
   width: 100%;
   height: 275px;
   object-fit: cover;
@@ -200,13 +197,14 @@ img {
 .carousel-btn {
   display: grid;
   place-items: center;
-  height: 42px;
-  width: 42px;
+  height: 56px;
+  width: 56px;
   padding: 0;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 18px;
   background: #fff;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(46, 58, 52, 0.08);
 }
 
 .carousel-btn:hover {
@@ -214,8 +212,11 @@ img {
 }
 
 .carousel-icon {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
 }
 
 .dots {
@@ -257,18 +258,6 @@ img {
 .section-title {
   margin: 0 0 10px;
   font-size: 28px;
-}
-
-.title-with-icon {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.title-icon {
-  width: 24px;
-  height: 24px;
-  flex: 0 0 auto;
 }
 
 .grid {
@@ -444,7 +433,7 @@ img {
     align-items: flex-start;
   }
 
-  .carousel img {
+  .carousel .slide-image {
     height: 220px;
   }
 }

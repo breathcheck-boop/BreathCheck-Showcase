@@ -5,26 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BreathCheck Showcase</title>
   <meta name="description" content="BreathCheck showcase: web app and installable PWA for calm anxiety self-help, guided modules, quick coping tools, progress tracking, and local-first saving with participant-linked research sync." />
-  <link rel="icon" type="image/webp" href="./assets/logo.webp?v=20260314-icons-1" />
-  <link rel="apple-touch-icon" href="./assets/logo.webp?v=20260314-icons-1" />
-  <link rel="stylesheet" href="styles.css?v=20260314-showcase-4" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png?v=20260314-icons-2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.png?v=20260314-icons-2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png?v=20260314-icons-2" />
+  <link rel="stylesheet" href="styles.css?v=20260314-showcase-5" />
 </head>
 <body>
   <header class="topbar">
-    <div class="container topbar-inner">
+      <div class="container topbar-inner">
       <div class="brand">
-        <img src="./assets/logo.webp?v=20260314" alt="BreathCheck logo" class="brand-logo" />
+        <img src="./assets/app-icon-192.png?v=20260314-icons-2" alt="BreathCheck logo" class="brand-logo" />
         <div>
           <h1>BreathCheck</h1>
           <p class="muted">Web app + installable PWA for desktop and mobile</p>
         </div>
       </div>
       <nav class="topnav">
-        <a href="#overview">Overview</a>
+        <a href="#overview">
+          <img src="./assets/icons/overview.svg?v=20260314-icons-2" alt="" class="topnav-icon" />
+          <span>Overview</span>
+        </a>
         <a href="#install">Install</a>
-        <a href="#modules">Modules</a>
-        <a href="#tools">Tools</a>
-        <a href="#privacy">Privacy</a>
+        <a href="#modules">
+          <img src="./assets/icons/menu_learn.svg?v=20260314-icons-2" alt="" class="topnav-icon" />
+          <span>Modules</span>
+        </a>
+        <a href="#tools">
+          <img src="./assets/icons/menu_tools.svg?v=20260314-icons-2" alt="" class="topnav-icon" />
+          <span>Tools</span>
+        </a>
+        <a href="#privacy">
+          <img src="./assets/icons/privacy.svg?v=20260314-icons-2" alt="" class="topnav-icon" />
+          <span>Privacy</span>
+        </a>
       </nav>
     </div>
   </header>
@@ -33,10 +46,7 @@
     <section class="hero" id="overview">
       <div class="container hero-grid">
         <article class="card hero-copy">
-          <p class="pill pill-with-icon">
-            <img src="./assets/icons/overview.svg?v=20260314-icons-1" alt="" class="pill-icon" />
-            <span>Calm, focused, local-first support</span>
-          </p>
+          <p class="pill">Calm, focused, local-first support</p>
           <h2>One product story: BreathCheck web app and PWA</h2>
           <p>
             BreathCheck helps users learn anxiety-management skills, use quick coping tools, and follow progress over time.
@@ -63,11 +73,11 @@
           <p class="muted">Current module flow and step media from the app.</p>
           <div class="carousel" id="carousel">
             <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">
-              <img src="./assets/icons/back.svg?v=20260314-icons-1" alt="" class="carousel-icon" />
+              <img src="./assets/icons/back.svg?v=20260314-icons-2" alt="" class="carousel-icon" />
             </button>
-            <img id="slideImage" src="./assets/module1/step1.webp?v=20260314" alt="Module 1 preview" />
+            <img id="slideImage" class="slide-image" src="./assets/module1/step1.webp?v=20260314" alt="Module 1 preview" />
             <button class="carousel-btn" id="nextBtn" aria-label="Next slide">
-              <img src="./assets/icons/forward.svg?v=20260314-icons-1" alt="" class="carousel-icon" />
+              <img src="./assets/icons/forward.svg?v=20260314-icons-2" alt="" class="carousel-icon" />
             </button>
           </div>
           <div class="dots" id="dots"></div>
@@ -122,10 +132,7 @@
 
     <section class="section muted-bg" id="modules">
       <div class="container">
-        <h2 class="section-title title-with-icon">
-          <img src="./assets/icons/menu_learn.svg?v=20260314-icons-1" alt="" class="title-icon" />
-          <span>Current Program Structure</span>
-        </h2>
+        <h2 class="section-title">Current Program Structure</h2>
         <p class="muted">These titles, summaries, step counts, and step flows mirror the current app.</p>
         <div class="grid cols-2 module-detail-grid">
           <article class="card module">
@@ -227,10 +234,7 @@
 
     <section class="section" id="tools">
       <div class="container">
-        <h2 class="section-title title-with-icon">
-          <img src="./assets/icons/menu_tools.svg?v=20260314-icons-1" alt="" class="title-icon" />
-          <span>Practical Tools</span>
-        </h2>
+        <h2 class="section-title">Practical Tools</h2>
         <div class="grid cols-2">
           <article class="card tool">
             <img src="./assets/tools/grounding.webp?v=20260312" alt="Breath Break tool visual" class="tool-image" />
@@ -270,10 +274,7 @@
 
     <section class="section" id="privacy">
       <div class="container">
-        <h2 class="section-title title-with-icon">
-          <img src="./assets/icons/privacy.svg?v=20260314-icons-1" alt="" class="title-icon" />
-          <span>Privacy and Safety</span>
-        </h2>
+        <h2 class="section-title">Privacy and Safety</h2>
         <div class="grid cols-2">
           <article class="card">
             <h3>Local-first with participant-linked sync</h3>
@@ -303,6 +304,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=20260314-showcase-4"></script>
+  <script src="script.js?v=20260314-showcase-5"></script>
 </body>
 </html>
